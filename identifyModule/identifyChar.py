@@ -14,8 +14,8 @@ import easyocr
 imagePath = r'E:\my_project\troubleShootingProject\troubleShootingPic\identifyModule\1.png'
 img = cv2.imread(imagePath)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-# cv2.imshow('gray', gray)
-# cv2.waitKey()
+cv2.imshow('gray', gray)
+cv2.waitKey()
 
 # 2.形态学变换的预处理，得到可以查找矩形的图片
 sobel = cv2.Sobel(gray, cv2.CV_8U, 1, 0, ksize = 3)
